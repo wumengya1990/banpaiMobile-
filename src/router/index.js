@@ -7,6 +7,8 @@ import Layout from '../page/Layout.vue';
 import Chose from '../page/Chose.vue';
 
 import links from '../page/components/links.vue';
+import login from '../page/components/login.vue';
+import identitySwitching from '../page/components/identitySwitching.vue';
 
 
 
@@ -20,6 +22,14 @@ export default new Router({
       path:'/links',
       name:'links',
       component:links
+    },{
+      path:'/login',
+      name:'login',
+      component:login
+    },{
+      path:'/identitySwitching',
+      name:'identitySwitching',
+      component:identitySwitching
     }
   //   {
   //   path: '/',

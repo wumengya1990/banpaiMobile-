@@ -9,7 +9,7 @@ import 'element-ui/lib/theme-chalk/index.css';
 Vue.use(ElementUI);
 
 // 统一引入项目样式
-// import './page/css/main.css';
+import './page/css/mobilestyle.css';
 // import './page/css/mainNew.css';
 // import './page/css/mainNew2.css';
 // import './page/css/hwuimobile.css';
