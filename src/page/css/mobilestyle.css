@@ -12,3 +12,73 @@ body,html{height:100%}
 .clearfix{zoom:1;}
 .clearfix:after,.clearfix:before{content:"";display:block;height:0;width:0;visibility:hidden}
 .clearfix:after{clear:both;}
+
+
+/* 登录界面 */
+.loginImg{ width:8em; height:8em; margin:0 auto; border-radius: 50%; overflow: hidden;}
+.loginImg img{ width: 100%; height: 100%;}
+.useTopMessage{ text-align: center;}
+.useTopMessage p{ color: #999999; font-size: 1.2rem; padding: 1rem 0 0;}
+.useTopMessage h4{ font-size: 1.8rem; color: #333333; padding: 1rem 0;}
+.loginBtnsBox input{ display: block; font-size:1.2rem; height: 3.5rem; line-height:3.5rem; width: 85%; text-align: center; margin:1.5rem auto; border-radius: 50px; overflow:hidden;}
+.loginBtnsBox input:nth-child(1){ background: #0096ff; color: #ffffff;}
+.loginBtnsBox input:nth-child(2){ background: #0fb185; color: #ffffff;}
+.loginBtnsBox input:nth-child(3){ background: #ff6c5e; color: #ffffff;}
+.loginBtnsBox input:nth-child(4){ background: #CCCCCC; color: #333333;}
+.loginMain{ height: 80%; width: 100%; overflow: hidden; position: fixed; left: 0; top: 0; right: 0; bottom: 0; margin: auto;}
+
+/* 背景颜色 */
+.bgColor{background:#f5f5f5;}
+
+/* 底部导航 */
+.nav{ position: fixed; left: 0; bottom: 0; right: 0; top: auto; margin: auto; display: -webkit-box; border-top: 1px solid #eaeaea; z-index: 100; background: #ffffff;}
+.nav a{ display: block; box-flex: 1; -webkit-box-flex: 1; text-align: center; height: 3rem; line-height: 3rem; font-size: 1.1rem; color: #666666; border-right:1px solid #eaeaea;}
+
+/* 管理员底部导航 */
+.navAdmin{ position: fixed; left: 0; bottom: 0; right: 0; top: auto; margin: auto; display: -webkit-box; border-top: 1px solid #eaeaea; z-index: 100; background: #ffffff;}
+.navAdmin a{ display: block; box-flex: 1; -webkit-box-flex: 1; text-align: center; color: #666666; padding: 0.5rem 0; position: relative;}
+.navAdmin em{display: block; box-flex: 1; -webkit-box-flex: 1; text-align: center; color: #666666; padding: 0.5rem 0; position: relative; }
+.navAdmin a i{ font-size:1.8rem;}
+.navAdmin a span{ display: block; font-size:.8rem;}
+.navAdmin em button{ position: absolute; left: 0; top: 0; right: 0; bottom: 0; margin: auto; width: 3rem; height: 3rem; line-height: 1rem; font-size: 1.8rem; vertical-align: middle; text-align: center;}
+.navAdmin em i{ font-size: 1.4rem;}
+
+.navAdmin .navtc{ position: absolute; bottom: 4rem; left: 0; top: auto; right: 0; background: #ffffff; padding:0 15px; border-top: 1px solid #eaeaea;}
+.navAdmin .navtc dl{ float: left;  width: 25%; text-align: center; margin: 0 0 20px;}
+.navAdmin .navtc dl dt{ width: 3.8rem; height: 3.8rem; margin: 0 auto; border-radius: 6px; overflow: hidden; background: #556080; position: relative;}
+.navAdmin .navtc dl dt img{ width: 60%; height: 60%; position: absolute; left: 0; top: 0; right: 0; bottom: 0; margin: auto;}
+.navAdmin .navtc dl dd{padding: 5px 0 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.navAdmin .navtc .bts{ text-align: right; padding: 10px 0;}
+.navAdmin .navtc .bts font{ display:inline-block; border-radius: 50px; padding: 0 1rem; height: 1.8rem; line-height:1.8rem; background: #0097fe; color:#ffffff; font-size: 0.8rem;}
+
+/* 我的页面 */
+.myPage{ height: 80%; width: 100%; overflow: hidden; position: fixed; left: 0; top: 0; right: 0; bottom: 0; margin: auto;}
+
+/* 留言页面 */
+.leaveMessage{ position: absolute; left: 0; top: 0; right: 0; bottom: 0; margin: auto;}
+.tabBox{ padding: 10px; background: #ffffff;}
+.tabBox span{ float: left; position: relative;border: 1px solid #dcdfe6; height: 2.2rem; line-height: 2.3rem; padding: 0 1rem; border-radius: 4px; margin:0 10px 0 0; z-index: 1;}
+.tabBox span em{ position: absolute; display: block; background: #ff0000; color: #ffffff; white-space: nowrap; height: 1.2rem; line-height: 1.3rem; font-size: 0.8rem; border-radius: 50px; padding: 0 5px; right:-10px; top:-10px; z-index: 2;}
+.tabBox span.on{ background: #0097fe; border:1px solid #0097fe; color: #ffffff;}
+.interBox{ padding: 0 10px 10px; background: #ffffff;}
+.interBox .interBoxBts{ padding: 10px 0 0; text-align: right;}
+
+.leaveMessageList{ position: absolute; left: 0; top: 15rem; right: 0; bottom:3rem; margin: auto; overflow: hidden; overflow-y: auto;}
+.leaveMessageList  li{padding: 10px; border-bottom: 1px solid #eaeaea;}
+.leaveHead{ position: relative;}
+.leaveHead .leaveHeadImg{ float: left; width:3rem; height:3rem; border-radius: 50%; overflow: hidden; margin:0 5px 0 0;}
+.leaveHead .leaveHeadImg img{ width: 100%; height: 100%;}
+.leaveHead h4{ color: #333333; font-size: 1.2rem;}
+.leaveHead time{ color: #999999;}
+.leaveHead span{ position: absolute; display: block; height: 2rem; line-height: 2rem; left: auto; top: 0; right: 0; bottom: 0; margin: auto; font-size: 1.1rem;}
+.leaveHead span.state1{ color: #ff0000;}
+.leaveContent{ padding: 10px 0;}
+.leaveContent p{ font-size: 1.1rem; line-height: 1.5em;}
+.leaveBack .userImg{ float: left; width:3rem; height:3rem; border-radius: 50%; overflow: hidden; margin:0 5px 0 0;}
+.leaveBack .userImg img{ width: 100%; height: 100%;}
+.leaveBack .leaveBackBox {padding:8px 0;}
+.leaveBack .backMessage{ background: #0097fe; color: #ffffff; max-width: 50%; border-radius: 6px; float: left; padding: 10px; position: relative; margin: 2px 0 0 13px;}
+.leaveBack .backMessage::before{ position: absolute; content: ''; display: block; width: 0; height: 0; line-height: 0; border:8px solid; border-color: transparent #0097fe transparent transparent ; left: -16px; right: auto;}
+.leaveBack .myMess .userImg{ float: right;}
+.leaveBack .myMess .backMessage{ float: right; margin: 2px 13px 0 0; }
+.leaveBack .myMess .backMessage::before{ position: absolute; content: ''; display: block; width: 0; height: 0; line-height: 0; border:8px solid; border-color: transparent transparent transparent #0097fe; right: -16px; left: auto;}

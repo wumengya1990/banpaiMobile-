@@ -1,16 +1,19 @@
 /* jshint esversion: 6 */
-import Vue from 'vue';
-import Router from 'vue-router';
+import Vue from 'vue'
+import Router from 'vue-router'
 // 布局
 import Layout from '../page/Layout.vue';
 // 选择角色
 import Chose from '../page/Chose.vue';
 
-import links from '../page/components/links.vue';
-import login from '../page/components/login.vue';
-import identitySwitching from '../page/components/identitySwitching.vue';
-
-
+import links from '../page/components/links.vue'
+import login from '../page/components/login.vue'
+import identitySwitching from '../page/components/identitySwitching.vue'
+import myPage from '../page/components/myPage.vue'
+import nav from '../page/components/nav.vue'
+import leaveMessage from '../page/components/leaveMessage.vue'
+import navAdmin from '../page/components/navAdmin.vue'
+import topMenu from '../page/components/topMenu.vue'
 
 Vue.use(Router);
 export default new Router({
@@ -30,6 +33,26 @@ export default new Router({
       path:'/identitySwitching',
       name:'identitySwitching',
       component:identitySwitching
+    },{
+      path:'/myPage',
+      name:'myPage',
+      component:myPage
+    },{
+      path:'/nav',
+      name:'nav',
+      component:nav
+    },{
+      path:'/leaveMessage',
+      name:'leaveMessage',
+      component:leaveMessage
+    },{
+      path:'/navAdmin',
+      name:'navAdmin',
+      component:navAdmin
+    },{
+      path:'/topMenu',
+      name:'topMenu',
+      component:topMenu
     }
   //   {
   //   path: '/',
@@ -45,21 +68,3 @@ export default new Router({
   // }
 ]
 })
-
-// const routes = [
-//   {                                                                        //当首次进入页面时，页面没有显示任何组件；让页面一加载进来就默认显示first页面
-//     path:'/',                                                           //重定向，就是给它重新指定一个方向，加载一个组件；
-//     component:resolve => require(['@/page/components/links'],resolve)
-//   }
-  
-  
-// //这里require组件路径根据自己的配置引入
-// ]
-// //最后创建router 对路由进行管理，它是由构造函数 new vueRouter() 创建，接受routes 参数。
-
-// const router = new Router({
-//   routes
-// })
-
-// export default router
-
