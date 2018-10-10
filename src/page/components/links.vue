@@ -6,6 +6,11 @@
         <router-link to="/nav">底部导航</router-link>
         <router-link to="/navAdmin">管理员底部导航</router-link>
         <router-link to="/leaveMessage">留言页面</router-link>
+        <router-link to="/topMenu">顶部菜单</router-link>
+        <router-link to="/messageList">消息列表</router-link>
+        <router-link to="/leftMenu">左侧菜单</router-link>
+        <router-link to="/pattern">标准模式</router-link>
+        <router-link to="/pattern1">倒计时模式</router-link>
     </div>
 </template>
 
@@ -16,5 +21,5 @@ export default {
 </script>
 
 <style>
-.links a{ display: block; width: 80%; height: 2.5rem; line-height: 2.5rem; text-align: center; margin:10px auto; background:#0097fe; color: #ffffff; }
+.links a{ display: block; width: 80%; height: 2.8rem; line-height: 2.8rem; text-align: center; margin:10px auto; background:#0097fe; color: #ffffff;  border-radius: 50px;}
 </style>

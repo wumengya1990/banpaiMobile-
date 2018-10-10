@@ -29,9 +29,22 @@ body,html{height:100%}
 
 /* 背景颜色 */
 .bgColor{background:#f5f5f5;}
+/* 全屏 */
+.fullScreen{ position: absolute; left: 0; top: 0; right: 0; bottom: 0; margin: auto;}
+
+/* 外边距 */
+.mgL5{ margin-left: 5px;}
+.mgR5{ margin-right: 5px;}
+.mgT5{ margin-top: 5px;}
+.mgB5{ margin-bottom: 5px;}
+
+.mgL10{ margin-left: 10px;}
+.mgR10{ margin-right: 10px;}
+.mgT10{ margin-top: 10px;}
+.mgB10{ margin-bottom: 10px;}
 
 /* 底部导航 */
-.nav{ position: fixed; left: 0; bottom: 0; right: 0; top: auto; margin: auto; display: -webkit-box; border-top: 1px solid #eaeaea; z-index: 100; background: #ffffff;}
+.nav{ position: fixed; left: 0; bottom: 0; right: 0; top: auto; margin: auto; display:-webkit-box; border-top: 1px solid #eaeaea; z-index: 100; background: #ffffff;}
 .nav a{ display: block; box-flex: 1; -webkit-box-flex: 1; text-align: center; height: 3rem; line-height: 3rem; font-size: 1.1rem; color: #666666; border-right:1px solid #eaeaea;}
 
 /* 管理员底部导航 */
@@ -82,3 +95,28 @@ body,html{height:100%}
 .leaveBack .myMess .userImg{ float: right;}
 .leaveBack .myMess .backMessage{ float: right; margin: 2px 13px 0 0; }
 .leaveBack .myMess .backMessage::before{ position: absolute; content: ''; display: block; width: 0; height: 0; line-height: 0; border:8px solid; border-color: transparent transparent transparent #0097fe; right: -16px; left: auto;}
+
+/* 顶部菜单样式 */
+.topMenu{ position: fixed; left: 0; top: 0; right: 0; bottom: auto; margin: auto;  display:-webkit-box; background: #FFF}
+.topMenu a{box-flex: 1; -webkit-box-flex:1; display: block; color:#333333; height: 3rem; line-height: 3rem; width: 100%; text-align: center; font-size: 1.1rem;}
+.topMenu a.on{ color: #0097fe; border-bottom:2px solid #0097fe; font-weight: bold;}
+
+/* 消息列表样式 */
+.messageListM{ position: absolute; left: 0; top:3.2rem; right: 0; bottom: 3.2rem; margin:auto; overflow: hidden; overflow-y: auto;}
+.messageListM ul li{ position: relative; margin: 10px 0; padding: 10px 100px 10px 10px; background: #ffffff;}
+.messageListM ul li a{ display: block; overflow: hidden; font-size: 1.2rem; white-space: nowrap; text-overflow: ellipsis; color: #333333;}
+.messageListM ul li p{ overflow: hidden; white-space: nowrap; text-overflow: ellipsis; padding:8px 0 0; font-size: 1.1rem; color: #777777;}
+.messageListM ul li time{ position: absolute; display: block;  left: auto; top: 0; right: 0; bottom: 0; width: 100px; height: 30px; line-height: 30px; text-align: center; margin: auto; color: #888888; font-size: 1.1rem;}
+
+/* 左侧菜单样式 */
+.leftMenu{ position: absolute; left: 0; top: 0; right: auto; bottom: 3.2rem; margin: auto; background: #ffffff; width: 6em;}
+.leftMenu h3{ height: 3rem; line-height: 3rem; font-size: 1.1rem; padding: 0 .5rem; font-weight: bold;}
+.leftMenu ul li{ height: 3rem; line-height: 3rem; }
+.leftMenu ul li a{ display: block; color: #444444; padding: 0 0.5em;}
+.leftMenu ul li a.on{ background:#f5f5f5;}
+.leftMenu ul li a.on span{ color: #0097fe; border-left:2px solid #0097fe;  padding: 0 0 0 5px;}
+
+/* 模式内容 */
+.patternRightBoxM{ position: absolute; left: 7rem; top: 0; right:1rem; bottom: 3.2rem; margin: auto;}
+.patternRightBox h4{ height: 2.5rem; line-height: 2.5rem; font-size: 1.1rem; color: #666666;}
+.patternRightBoxN{ background: #FFF; padding:10px; border-radius: 6px;}

@@ -14,6 +14,11 @@ import nav from '../page/components/nav.vue'
 import leaveMessage from '../page/components/leaveMessage.vue'
 import navAdmin from '../page/components/navAdmin.vue'
 import topMenu from '../page/components/topMenu.vue'
+import messageList from '../page/components/messageList.vue'
+import messageListNotice from '../page/components/messageListNotice.vue'
+import leftMenu from '../page/components/leftMenu.vue'
+import pattern from '../page/components/pattern.vue'       //标准模式
+import pattern1 from '../page/components/pattern1.vue'     //倒计时模式
 
 Vue.use(Router);
 export default new Router({
@@ -53,6 +58,26 @@ export default new Router({
       path:'/topMenu',
       name:'topMenu',
       component:topMenu
+    },{
+      path:'/messageList',
+      name:'messageList',
+      component:messageList
+    },{
+      path:'/messageListNotice',
+      name:'messageListNotice',
+      component:messageListNotice
+    },{
+      path:'/leftMenu',
+      name:'leftMenu',
+      component:leftMenu
+    },{
+      path:'/pattern',
+      name:'pattern',
+      component:pattern
+    },{
+      path:'/pattern1',
+      name:'pattern1',
+      component:pattern1
     }
   //   {
   //   path: '/',
