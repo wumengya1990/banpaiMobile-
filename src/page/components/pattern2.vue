@@ -7,14 +7,14 @@
             <div class="patternRightBox">
                 <h4>已选班级</h4>
                 <div class="patternRightBoxN">
-                    
+                    草草草擦
                 </div>
             </div>
 
             <div class="patternRightBox">
                 <h4>已选班级</h4>
                 <div class="patternRightBoxN">
-                   
+                   草草草擦
                 </div>
             </div>
             
