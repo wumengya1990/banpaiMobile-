@@ -14,7 +14,7 @@
             <div class="patternRightBox">
                 <h4>已选班级</h4>
                 <div class="patternRightBoxN">
-                   草草草擦
+                   草草草擦大撒旦撒旦撒
                 </div>
             </div>
             
