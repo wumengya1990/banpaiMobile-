@@ -7,7 +7,7 @@
             <div class="patternRightBox">
                 <h4>已选班级</h4>
                 <div class="patternRightBoxN">
-                    草草草擦
+                    草草草擦哒哒哒啊三大三大三大岁
                 </div>
             </div>
 
