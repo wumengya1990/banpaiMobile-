@@ -7,14 +7,17 @@
             <div class="patternRightBox">
                 <h4>已选班级</h4>
                 <div class="patternRightBoxN">
-                    草草草擦哒哒哒啊三大三大三大岁
+                    <el-radio-group v-model="noticeCho">
+                        <el-radio v-for="notice in noticeGroupnrs" :label="notice" :key="notice">{{notice}}</el-radio>
+                    </el-radio-group>
                 </div>
             </div>
 
             <div class="patternRightBox">
                 <h4>已选班级</h4>
                 <div class="patternRightBoxN">
-                   草草草擦大撒旦撒旦撒
+                  <div class="bts"><el-button type="primary" size="small" style="width:100%;" round>选择班级</el-button></div>
+                  <el-tag class="mgR5 mgB5" v-for="tag in tags" :key="tag" closable :disable-transitions="false" @close="handleClose(tag)">{{tag}}</el-tag>
                 </div>
             </div>
             
@@ -31,15 +34,26 @@ name:"pattern2",
 components:{bnavs,leftMenu},
 data(){
     return{
-
+        noticeCho:'',
+        noticeGroupnrs:['关于“六一”放假提前通知','关于社会实践活动延期举行','恶劣天气停课通知'],
+        tags: [ '标签一', '标签二', '标签三', '标签四']
     }
 },
 methods:{
-
+    handleClose(tag){
+        this.tags.splice(this.tags.indexOf(tag), 1);
+    },
+    handleCheckChange(data, checked, indeterminate) {
+        console.log(data, checked, indeterminate);
+    },
+    handleNodeClick(data) {
+        console.log(data);
+    }
 }
 }
 </script>
 
 <style>
-
+.el-radio+.el-radio{ margin: 0;}
+.el-radio{ height: 30px; line-height: 30px;}
 </style>

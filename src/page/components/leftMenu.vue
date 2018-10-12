@@ -3,8 +3,8 @@
         <h3>模式设置</h3>
         <ul>
             <li><router-link active-class="on" to="/pattern"><span>标准模式</span></router-link></li>
-            <li><router-link to=""><span>倒计时模式</span></router-link></li>
-            <li><router-link to=""><span>通知模式</span></router-link></li>
+            <li><router-link active-class="on" to="/pattern1"><span>倒计时模式</span></router-link></li>
+            <li><router-link active-class="on" to="/pattern2"><span>通知模式</span></router-link></li>
             <li><router-link to=""><span>轮播模式</span></router-link></li>
             <li><router-link to=""><span>考场模式</span></router-link></li>
             <li><router-link to=""><span>视频模式</span></router-link></li>

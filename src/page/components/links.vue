@@ -11,6 +11,9 @@
         <router-link to="/leftMenu">左侧菜单</router-link>
         <router-link to="/pattern">标准模式</router-link>
         <router-link to="/pattern1">倒计时模式</router-link>
+        <router-link to="/pattern2">通知模式</router-link>
+        <router-link to="/layerPage">弹层</router-link>
+        
     </div>
 </template>
 

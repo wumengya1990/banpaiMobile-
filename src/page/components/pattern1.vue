@@ -7,14 +7,17 @@
             <div class="patternRightBox">
                 <h4>已选班级</h4>
                 <div class="patternRightBoxN">
-                    <el-tag class="mgR5 mgB5" v-for="tag in tags" :key="tag" closable :disable-transitions="false" @close="handleClose(tag)">{{tag}}</el-tag>
+                    <el-radio-group v-model="noticeCho">
+                        <el-radio v-for="notice in noticeGroupnrs" :label="notice" :key="notice">{{notice}}</el-radio>
+                    </el-radio-group>
                 </div>
             </div>
 
             <div class="patternRightBox">
                 <h4>已选班级</h4>
                 <div class="patternRightBoxN">
-                    <el-tree :data="data" :props="defaultProps" show-checkbox @check-change="handleCheckChange" @node-click="handleNodeClick"></el-tree>
+                    <div class="bts"><el-button type="primary" size="small" style="width:100%;" round>选择班级</el-button></div>
+                  <el-tag class="mgR5 mgB5" v-for="tag in tags" :key="tag" closable :disable-transitions="false" @close="handleClose(tag)">{{tag}}</el-tag>
                 </div>
             </div>
             
@@ -26,53 +29,15 @@
 <script>
 import bnavs from "./navAdmin.vue"
 import leftMenu from "./leftMenu.vue"
+import layerPage from "./layerPage.vue"
 export default {
 name:"pattern1",
-components:{bnavs,leftMenu},
+components:{bnavs,leftMenu,layerPage},
 data(){
     return{
-        tags: [ '标签一', '标签二', '标签三', '标签四'],
-        data: [{
-          label: '一级 1',
-          children: [{
-            label: '二级 1-1',
-            children: [{
-              label: '三级 1-1-1'
-            },{
-              label: '三级 1-1-2'
-            }]
-          }]
-        }, {
-          label: '一级 2',
-          children: [{
-            label: '二级 2-1',
-            children: [{
-              label: '三级 2-1-1'
-            }]
-          }, {
-            label: '二级 2-2',
-            children: [{
-              label: '三级 2-2-1'
-            }]
-          }]
-        }, {
-          label: '一级 3',
-          children: [{
-            label: '二级 3-1',
-            children: [{
-              label: '三级 3-1-1'
-            }]
-          }, {
-            label: '二级 3-2',
-            children: [{
-              label: '三级 3-2-1'
-            }]
-          }]
-        }],
-        defaultProps: {
-          children: 'children',
-          label: 'label'
-        }
+        noticeCho:'',
+        noticeGroupnrs:['距离高考还有100天','距离高考还有10天','距离高考还有0天'],
+        tags: [ '标签一', '标签二', '标签三', '标签四']
     }
 },
 methods:{
@@ -90,5 +55,7 @@ methods:{
 </script>
 
 <style>
+.el-radio+.el-radio{ margin: 0;}
+.el-radio{ height: 30px; line-height: 30px;}
 
 </style>
