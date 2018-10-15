@@ -48,7 +48,7 @@ body,html{height:100%}
 .nav a{ display: block; box-flex: 1; -webkit-box-flex: 1; text-align: center; height: 3rem; line-height: 3rem; font-size: 1.1rem; color: #666666; border-right:1px solid #eaeaea;}
 
 /* 管理员底部导航 */
-.navAdmin{ position: fixed; left: 0; bottom: 0; right: 0; top: auto; margin: auto; display: -webkit-box; border-top: 1px solid #eaeaea; z-index: 100; background: #ffffff;}
+.navAdmin{ position: fixed; left: 0; bottom: 0; right: 0; top: auto; margin: auto; display: -webkit-box; border-top: 1px solid #eaeaea; z-index: 100; background: #ffffff; height: 4rem;}
 .navAdmin a{ display: block; box-flex: 1; -webkit-box-flex: 1; text-align: center; color: #666666; padding: 0.5rem 0; position: relative;}
 .navAdmin em{display: block; box-flex: 1; -webkit-box-flex: 1; text-align: center; color: #666666; padding: 0.5rem 0; position: relative; }
 .navAdmin a i{ font-size:1.8rem;}
@@ -121,9 +121,16 @@ body,html{height:100%}
 .patternRightBox h4{ height: 2.5rem; line-height: 2.5rem; font-size: 1.1rem; color: #666666;}
 .patternRightBoxN{ background: #FFF; padding:10px; border-radius: 6px;}
 .patternRightBoxN .bts{ text-align: center; padding: 0 0 10px;}
-
+.materialList li{ padding: 8px 0; overflow: hidden; position: relative; border-bottom: 1px solid #eaeaea; white-space: nowrap;}
+.materialList li em{ display:inline-block; vertical-align: middle; width: 2rem; height: 2rem; text-align: center; line-height: 2.5rem; background: #0fb185; border-radius: 6px; margin: 0 10px 0 0;}
+.materialList li p{ display: inline-block; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; vertical-align: middle; padding: 0 3rem 0 0; box-sizing:border-box; width: 80%;}
+.materialList li em i{ font-size: 18px; color: #FFFFFF;}
+.materialList li button{ position: absolute; top:0; right: 0; bottom: 0; left: auto; margin: auto; text-align: center; width: 2rem; height:2rem;}
+.materialList li button i{ font-size: 13px;}
 /* 谭才能页面样式 */
+.layerBoxShowHide{ position: fixed; left: 100%; top: 0; right: 0; bottom: 4rem; overflow: hidden; overflow-y: auto; margin: auto; width: 100%;}
+.layerPage{ position: absolute; left: 0; top: 0; right: 0; bottom: 0; margin: auto; background: #FFFFFF;}
 .layerPage .layerPageN{ padding: 10px;}
 .layerPage h3{ height: 3rem; line-height: 3rem; text-align: center; position: relative; border-bottom: 1px solid #eaeaea;}
-.layerPage h3 em{ font-size: 1.2rem; display: block; position: absolute; left: 0; top: 0; right: 0; bottom: 0; margin: auto;}
+.layerPage h3 em{ font-size: 1.2rem; display: block; position: absolute; left: 0; top: 0; right: 0; bottom: 0; margin: auto; width: 100px;}
 .layerPage h3 button{ float: right; font-size:12px; margin:0.5rem 0.5rem 0}

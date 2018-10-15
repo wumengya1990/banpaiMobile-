@@ -19,7 +19,10 @@ import messageListNotice from '../page/components/messageListNotice.vue'
 import leftMenu from '../page/components/leftMenu.vue'
 import pattern from '../page/components/pattern.vue'       //标准模式
 import pattern1 from '../page/components/pattern1.vue'     //倒计时模式
-import pattern2 from '../page/components/pattern2.vue'     //通知模板
+import pattern2 from '../page/components/pattern2.vue'     //通知模式
+import pattern3 from '../page/components/pattern3.vue'     //轮播模式
+import pattern4 from '../page/components/pattern4.vue'     //考场模式
+import pattern5 from '../page/components/pattern5.vue'     //考场模式
 import layerPage from '../page/components/layerPage.vue'
 
 Vue.use(Router);
@@ -84,6 +87,18 @@ export default new Router({
       path:'/pattern2',
       name:'pattern2',
       component:pattern2
+    },{
+      path:'/pattern3',
+      name:'pattern3',
+      component:pattern3
+    },{
+      path:'/pattern4',
+      name:'pattern4',
+      component:pattern4
+    },{
+      path:'/pattern5',
+      name:'pattern5',
+      component:pattern5
     },{
       path:'/layerPage',
       name:'layerPage',

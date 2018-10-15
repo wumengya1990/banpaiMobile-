@@ -12,6 +12,9 @@
         <router-link to="/pattern">标准模式</router-link>
         <router-link to="/pattern1">倒计时模式</router-link>
         <router-link to="/pattern2">通知模式</router-link>
+        <router-link to="/pattern3">轮播模式</router-link>
+        <router-link to="/pattern4">考场模式</router-link>
+        <router-link to="/pattern5">视频模式</router-link>
         <router-link to="/layerPage">弹层</router-link>
         
     </div>
