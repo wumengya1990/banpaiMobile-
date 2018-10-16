@@ -4,11 +4,25 @@
         <bnavs></bnavs>
 
         <div class="patternRightBoxM">
+
+            <div class="patternRightBox">
+                <h4>已选素材</h4>
+                <div class="patternRightBoxN">
+                  <div class="bts"><el-button type="primary" size="small" style="width:100%;" round @click="showLayer('sucai')" >点击选择素材</el-button></div>
+                   <ul class="materialList">
+                       <li><em><i class="el-icon-picture-outline"></i></em><p>哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p><el-button type="danger" size="mini" icon="el-icon-delete" circle></el-button></li>
+                       <li><em><i class="el-icon-picture-outline"></i></em><p>哈哈哈哈哈哈哈哈</p><el-button type="danger" size="mini" icon="el-icon-delete" circle></el-button></li>
+                       <li><em><i class="el-icon-picture-outline"></i></em><p>哈哈哈哈哈哈哈哈</p><el-button type="danger" size="mini" icon="el-icon-delete" circle></el-button></li>
+                       <li><em><i class="el-icon-picture-outline"></i></em><p>哈哈哈哈哈哈哈哈</p><el-button type="danger" size="mini" icon="el-icon-delete" circle></el-button></li>
+                   </ul>
+                </div>
+
+            </div>
         
             <div class="patternRightBox">
                 <h4>已选班级</h4>
                 <div class="patternRightBoxN">
-                  <div class="bts"><el-button type="primary" size="small" style="width:100%;" round @click="showLayer('banji')" >选择班级</el-button></div>
+                  <div class="bts"><el-button type="primary" size="small" style="width:100%;" round @click="showLayer('banji')" >点击选择班级</el-button></div>
                   <el-tag class="mgR5 mgB5" v-for="tag in tags" :key="tag" closable :disable-transitions="false" @close="handleClose(tag)">{{tag}}</el-tag>
                 </div>
             </div>
