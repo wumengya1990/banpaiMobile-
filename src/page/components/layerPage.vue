@@ -6,7 +6,7 @@
               <el-tree :data="data" :props="defaultProps" show-checkbox @node-click="handleNodeClick"></el-tree>
             </div>
             <div v-else>
-              素材选择页面
+              <div class=""></div>
             </div>
         </div>
 
@@ -22,38 +22,14 @@ data() {
         materialList:'nimeinimeinimeinimei',
         data: [
           {
-          label: '一级 1',
+          label: '一年级',
           children: [{
-            label: '二级 1-1',
-            children: [{
-              label: '三级 1-1-1'
-            }]
+            label: '（1）班级'
           }]
-        }, {
-          label: '一级 2',
+        },{
+          label: '二年级',
           children: [{
-            label: '二级 2-1',
-            children: [{
-              label: '三级 2-1-1'
-            }]
-          }, {
-            label: '二级 2-2',
-            children: [{
-              label: '三级 2-2-1'
-            }]
-          }]
-        }, {
-          label: '一级 3',
-          children: [{
-            label: '二级 3-1',
-            children: [{
-              label: '三级 3-1-1'
-            }]
-          }, {
-            label: '二级 3-2',
-            children: [{
-              label: '三级 3-2-1'
-            }]
+            label: '（1）班级'
           }]
         }],
         defaultProps: {

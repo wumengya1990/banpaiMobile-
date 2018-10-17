@@ -117,7 +117,7 @@ body,html{height:100%}
 .leftMenu ul li a.on span{ color: #0097fe; border-left:2px solid #0097fe;  padding: 0 0 0 5px;}
 
 /* 模式内容 */
-.patternRightBoxM{ position: absolute; left: 8rem; top: 0; right:1rem; bottom: 3.2rem; margin: auto;}
+.patternRightBoxM{ position: absolute; left: 8rem; top: 0; right:1rem; bottom: 3.2rem; margin: auto; overflow-y: auto;}
 .patternRightBox h4{ height: 2.5rem; line-height: 2.5rem; font-size: 1.1rem; color: #666666;}
 .patternRightBoxN{ background: #FFF; padding:10px; border-radius: 6px;}
 .patternRightBoxN .bts{ text-align: center; padding: 0 0 10px;}
