@@ -83,6 +83,7 @@ body,html{height:100%}
 .leaveHead .leaveHeadImg img{ width: 100%; height: 100%;}
 .leaveHead h4{ color: #333333; font-size: 1.2rem;}
 .leaveHead time{ color: #999999;}
+.leaveHead time em{ padding:0 10px 0 0;}
 .leaveHead span{ position: absolute; display: block; height: 2rem; line-height: 2rem; left: auto; top: 0; right: 0; bottom: 0; margin: auto; font-size: 1.1rem;}
 .leaveHead span.state1{ color: #ff0000;}
 .leaveContent{ padding: 10px 0;}
@@ -127,10 +128,23 @@ body,html{height:100%}
 .materialList li em i{ font-size: 18px; color: #FFFFFF;}
 .materialList li button{ position: absolute; top:0; right: 0; bottom: 0; left: auto; margin: auto; text-align: center; width: 2rem; height:2rem;}
 .materialList li button i{ font-size: 13px;}
-/* 谭才能页面样式 */
+/* 弹层页面样式 */
 .layerBoxShowHide{ position: fixed; left: 100%; top: 0; right: 0; bottom: 4rem; overflow: hidden; overflow-y: auto; margin: auto; width: 100%;}
 .layerPage{ position: absolute; left: 0; top: 0; right: 0; bottom: 0; margin: auto; background: #FFFFFF;}
 .layerPage .layerPageN{ padding: 10px;}
 .layerPage h3{ height: 3rem; line-height: 3rem; text-align: center; position: relative; border-bottom: 1px solid #eaeaea;}
 .layerPage h3 em{ font-size: 1.2rem; display: block; position: absolute; left: 0; top: 0; right: 0; bottom: 0; margin: auto; width: 100px;}
 .layerPage h3 button{ float: right; font-size:12px; margin:0.5rem 0.5rem 0}
+
+.materialBoxN{}
+.materialBoxN p.timeLine{ padding: 10px 0;}
+.materialBoxN p.timeLine span{ padding:0 10px 0 0;}
+.materialBoxN ul li{ position: relative; float: left; box-sizing: border-box;  width: 25%; border:1px solid #ffffff;}
+.materialBoxN ul li .imgBox{ width: 100%; height: 100%; overflow: hidden; position: relative;}
+.materialBoxN ul li .imgBox img{position: absolute; left:0; top: 0; right: 0; bottom: 0; margin: auto;}
+.materialBoxN ul li label{ position: absolute; left: 0; top: 0; right: 0; bottom: 0; margin: auto;}
+.materialBoxN ul li label input{ display: block; width: 100%; height: 100%; left: 0; top: 0; right: 0; bottom: 0; margin: auto;}
+.materialBoxN ul li label span{ position: absolute; width: 1.2rem; height: 1.2rem; text-align: center; line-height: 2rem; border-radius:50%; right: 0.3rem; bottom: 0.3rem; border: 1px solid #FFFFFF; overflow: hidden; background: rgba(0,0,0,0.2)}
+.materialBoxN ul li label span i{ font-size: 1rem; color: #FFFFFF; display: none;  line-height: 1.3rem;}
+.materialBoxN ul li label.on span{ background: #409EFF; border:1px solid #409EFF;}
+.materialBoxN ul li label.on span i{ color: #FFFFFF; display: block;}

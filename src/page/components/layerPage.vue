@@ -6,7 +6,22 @@
               <el-tree :data="data" :props="defaultProps" show-checkbox @node-click="handleNodeClick"></el-tree>
             </div>
             <div v-else>
-              <div class=""></div>
+              <div class="materialBoxM">
+                <div class="materialBoxN">
+                <p class="timeLine"><span>2018-10-18</span><span>星期四</span></p>
+                <ul>
+                  <li><div class="imgBox"><img src="../images/userimg.jpg"></div><label><span><i class="el-icon-check"></i></span><input type="checkbox"></label></li>
+                  <li><div class="imgBox"><img src="../images/userimg.jpg"></div><label><span><i class="el-icon-check"></i></span><input type="checkbox"></label></li>
+                  <li><div class="imgBox"><img src="../images/userimg.jpg"></div><label><span><i class="el-icon-check"></i></span><input type="checkbox"></label></li>
+                  <li><div class="imgBox"><img src="../images/userimg.jpg"></div><label><span><i class="el-icon-check"></i></span><input type="checkbox"></label></li>
+                  <li><div class="imgBox"><img src="../images/userimg.jpg"></div><label><span><i class="el-icon-check"></i></span><input type="checkbox"></label></li>
+                </ul>
+                <div class="clear"></div>
+                </div>
+
+                
+                
+              </div>
             </div>
         </div>
 
@@ -14,6 +29,7 @@
 </template>
 
 <script>
+import $ from "jquery"
 export default {
 name:'layerPage',
 data() {
@@ -43,6 +59,8 @@ data() {
         type:String,
         required:true
       }
+    },mounted(){
+      this.setMaterialBoxHeight();
     },
     methods:{
       handleClose(tag){
@@ -58,6 +76,20 @@ data() {
         let tcBox = document.getElementsByClassName("layerBoxShowHide")[0];
         tcBox.style.left = "100%";
         this.$emit('classList', this.classList);
+      },
+      setMaterialBoxHeight:function(){
+        // var liwidth = $(".materialBoxN ul li").width();
+        $(".materialBoxN ul li").height($(".materialBoxN ul li").width())
+        $(".materialBoxN ul li label input").click(function(){
+          if(!$(this).is(":checked")){
+            $(this).prop("checked",false);
+            $(this).parent().removeClass("on");
+          }else{
+            $(this).prop("checked",true);
+            $(this).parent().addClass("on");
+          }
+        })
+        
       }
     }
 }

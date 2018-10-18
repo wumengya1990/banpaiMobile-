@@ -17,7 +17,7 @@
                 <div class="leaveHead">
                     <div class="leaveHeadImg"><img src="../images/userimg.jpg"></div>
                     <h4>林杨</h4>
-                    <time>2018-09-31&nbsp&nbsp16:35</time>
+                    <time><em>2018-09-31</em><em>16:35</em></time>
                     <span class="state">未读</span>
                     <div class="clear"></div>
                 </div>
@@ -46,7 +46,7 @@
                 <div class="leaveHead">
                     <div class="leaveHeadImg"><img src="../images/userimg.jpg"></div>
                     <h4>林杨</h4>
-                    <time>2018-09-31&nbsp&nbsp16:35</time>
+                    <time><em>2018-09-31</em><em>16:35</em></time>
                     <span class="state1">未读</span>
                     <div class="clear"></div>
                 </div>

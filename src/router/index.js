@@ -24,6 +24,7 @@ import pattern3 from '../page/components/pattern3.vue'     //轮播模式
 import pattern4 from '../page/components/pattern4.vue'     //考场模式
 import pattern5 from '../page/components/pattern5.vue'     //考场模式
 import layerPage from '../page/components/layerPage.vue'
+import manage from '../page/components/manage.vue'     //考场模式
 
 Vue.use(Router);
 export default new Router({
@@ -103,6 +104,10 @@ export default new Router({
       path:'/layerPage',
       name:'layerPage',
       component:layerPage
+    },{
+      path:'/manage',
+      name:'manage',
+      component:manage
     }
   //   {
   //   path: '/',

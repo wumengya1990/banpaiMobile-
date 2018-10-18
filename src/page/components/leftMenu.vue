@@ -11,7 +11,7 @@
         </ul>
         <h3>系统设置</h3>
         <ul>
-            <li><router-link to="">开关机管理</router-link></li>
+            <li><router-link active-class="on" to="/manage"><span>开关机管理</span></router-link></li>
         </ul>
     </div>
 </template>
