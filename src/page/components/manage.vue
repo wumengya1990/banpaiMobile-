@@ -3,24 +3,26 @@
         <leftMenu></leftMenu>
         <bnavs></bnavs>
         <div class="patternRightBoxM">
-            <div class="patternRightBox">
+            <div class="patternRightBox mgT10">
                 <div class="patternRightBoxN">
-                <el-switch v-model="value2" active-color="#13ce66" inactive-color="#ff4949"></el-switch>
+                    <ul class="switchList">
+                        <li><em>是否使用</em><p><el-switch v-model="useDom" active-color="#13ce66" inactive-color="#ff4949"></el-switch></p></li>
+                    </ul>
                 </div>
             </div>
 
             <div class="patternRightBox">
                  <h4>开关机时间</h4>
                  <div class="patternRightBoxN">
-                     <ul>
-                         <li><el-time-picker  v-model="value3" :picker-options="{ selectableRange: '18:30:00 - 20:30:00'}" placeholder="任意时间点"></el-time-picker></li>
-                         <li><el-time-picker  v-model="value4" :picker-options="{ selectableRange: '18:30:00 - 20:30:00'}" placeholder="任意时间点"></el-time-picker></li>
+                     <ul class="timeList">
+                         <li><p><i class="el-icon-time"></i><em>{{beginTime}}</em><input v-model="beginTime" type="time"></p></li>
+                         <li><p><i class="el-icon-time"></i><em>{{endTime}}</em><input v-model="endTime" type="time"></p></li>
                      </ul>
                 </div>
             </div>
 
             <div class="patternRightBox">
-                 <h4>开关机时间</h4>
+                 <h4>设置星期</h4>
                  <div class="patternRightBoxN">
                      <el-radio-group v-model="radio2">
                         <el-radio :label="3">备选项</el-radio>
@@ -43,10 +45,10 @@ components:{bnavs,leftMenu},
 data(){
     return{
         value1: true,
-        value2: true,
-        value3: new Date(2016, 9, 10, 18, 40),
-        value4: new Date(2016, 9, 10, 18, 40),
-        radio2: 3
+        useDom: false,
+        radio2: 3,
+        beginTime:'00:00:00',
+        endTime:'00:00:00'
     }
 }
 }

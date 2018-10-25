@@ -33,15 +33,15 @@
     methods:{
       // 切换为学校管理员
       go_school:function () {
-        this.$router.push({name:'SM'});
+        this.bus.$emit('go_school');
       },
       // 切换为班主任
       go_class:function () {
-
+        this.bus.$emit('go_class');
       },
       // 返回
       go_back:function () {
-        this.bus.$emit('select_nav',1);
+        this.bus.$emit('gu_nav',1);
         this.$router.push({name:'GU_Message'});
       }
     },

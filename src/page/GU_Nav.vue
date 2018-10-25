@@ -22,12 +22,15 @@ export default {
       }else if(type == 2){
         this.name = 'GU_Chose';
       }
-      this.$router.push({name:this.name});
+      if(this.name != ''){
+        this.$router.push({name:this.name});
+      }
+
     }
   },
   mounted:function () {
     // 注册事件
-    this.bus.$on('select_nav', (type)=>{
+    this.bus.$on('gu_nav', (type)=>{
       this.go_gu(type);
     });
   }
