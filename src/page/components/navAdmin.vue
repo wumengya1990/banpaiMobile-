@@ -1,34 +1,36 @@
 <template>
     <div class="navAdmin">
-        <a href="">
-            <i class="el-icon-goods"></i>
+        <router-link active-class="on" to="/monitor">
+            <i class="icon iconfont icon-iconfont-zhutizuizhong-"></i>
             <span>监控设备</span>
-        </a>
-        <a href="">
-            <i class="el-icon-goods"></i>
+        </router-link>
+        <router-link active-class="on" to="/pattern">
+             <i class="icon iconfont icon-toupingshezhi"></i>
             <span>班牌管理</span>
-        </a>
+        </router-link>
         <em>
             <el-button type="primary" icon="el-icon-plus" size="mini" @click="navtcShow()" circle></el-button>
         </em>
-        <a href="">
-            <i class="el-icon-goods"></i>
+        <router-link active-class="on" to="/messageListNotice">
+            <i class="icon iconfont icon-xiaoyuanmenhu"></i>
             <span>校园管理</span>
-        </a>
-        <a href="">
-            <i class="el-icon-goods"></i>
+        </router-link>
+        <router-link to="">
+            <i class="icon iconfont icon-cailiaobao"></i>
+            
             <span>素材管理</span>
-        </a>
+        </router-link>
+
         <div class="navtc" v-show="tcShow">
             <div class="bts"><font @click="navtcShow()">关闭</font></div>
-            <dl><dt><img src="../images/userimg.jpg"></dt><dd>设备监控</dd></dl>
-            <dl><dt><img src="../images/userimg.jpg"></dt><dd>设备监控</dd></dl>
-            <dl><dt><img src="../images/userimg.jpg"></dt><dd>设备监控</dd></dl>
-            <dl><dt><img src="../images/userimg.jpg"></dt><dd>设备监控</dd></dl>
-            <dl><dt><img src="../images/userimg.jpg"></dt><dd>设备监控</dd></dl>
-            <dl><dt><img src="../images/userimg.jpg"></dt><dd>设备监控</dd></dl>
-            <dl><dt><img src="../images/userimg.jpg"></dt><dd>设备监控</dd></dl>
-            <dl><dt><img src="../images/userimg.jpg"></dt><dd>设备监控</dd></dl>
+            <dl><dt><img src="../resource/images/userimg.jpg"></dt><dd>设备监控</dd></dl>
+            <dl><dt><img src="../resource/images/userimg.jpg"></dt><dd>设备监控</dd></dl>
+            <dl><dt><img src="../resource/images/userimg.jpg"></dt><dd>设备监控</dd></dl>
+            <dl><dt><img src="../resource/images/userimg.jpg"></dt><dd>设备监控</dd></dl>
+            <dl><dt><img src="../resource/images/userimg.jpg"></dt><dd>设备监控</dd></dl>
+            <dl><dt><img src="../resource/images/userimg.jpg"></dt><dd>设备监控</dd></dl>
+            <dl><dt><img src="../resource/images/userimg.jpg"></dt><dd>设备监控</dd></dl>
+            <dl><dt><img src="../resource/images/userimg.jpg"></dt><dd>设备监控</dd></dl>
         </div>
     </div>
 </template>

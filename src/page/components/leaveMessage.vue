@@ -15,7 +15,7 @@
         <ul class="leaveMessageList">
             <li>
                 <div class="leaveHead">
-                    <div class="leaveHeadImg"><img src="../images/userimg.jpg"></div>
+                    <div class="leaveHeadImg"><img src="../resource/images/userimg.jpg"></div>
                     <h4>林杨</h4>
                     <time><em>2018-09-31</em><em>16:35</em></time>
                     <span class="state">未读</span>
@@ -26,17 +26,17 @@
                 </div>
                 <div class="leaveBack">
                         <div class="leaveBackBox myMess">
-                            <div class="userImg"><img src="../images/userimg.jpg"></div>
+                            <div class="userImg"><img src="../resource/images/userimg.jpg"></div>
                             <div class="backMessage"><p>好的</p></div>
                             <div class="clear"></div>
                         </div>
                         <div class="leaveBackBox myMess">
-                            <div class="userImg"><img src="../images/userimg.jpg"></div>
+                            <div class="userImg"><img src="../resource/images/userimg.jpg"></div>
                             <div class="backMessage"><p>好的好的好的好的好的好的好的好的好的好的好的好的好的</p></div>
                             <div class="clear"></div>
                         </div>
                         <div class="leaveBackBox">
-                            <div class="userImg"><img src="../images/userimg.jpg"></div>
+                            <div class="userImg"><img src="../resource/images/userimg.jpg"></div>
                             <div class="backMessage"><p>好的</p></div>
                             <div class="clear"></div>
                         </div>
@@ -44,7 +44,7 @@
             </li>
             <li>
                 <div class="leaveHead">
-                    <div class="leaveHeadImg"><img src="../images/userimg.jpg"></div>
+                    <div class="leaveHeadImg"><img src="../resource/images/userimg.jpg"></div>
                     <h4>林杨</h4>
                     <time><em>2018-09-31</em><em>16:35</em></time>
                     <span class="state1">未读</span>
@@ -55,17 +55,17 @@
                 </div>
                 <div class="leaveBack">
                         <div class="leaveBackBox myMess">
-                            <div class="userImg"><img src="../images/userimg.jpg"></div>
+                            <div class="userImg"><img src="../resource/images/userimg.jpg"></div>
                             <div class="backMessage"><p>好的</p></div>
                             <div class="clear"></div>
                         </div>
                         <div class="leaveBackBox myMess">
-                            <div class="userImg"><img src="../images/userimg.jpg"></div>
+                            <div class="userImg"><img src="../resource/images/userimg.jpg"></div>
                             <div class="backMessage"><p>好的好的好的好的好的好的好的好的好的好的好的好的好的</p></div>
                             <div class="clear"></div>
                         </div>
                         <div class="leaveBackBox">
-                            <div class="userImg"><img src="../images/userimg.jpg"></div>
+                            <div class="userImg"><img src="../resource/images/userimg.jpg"></div>
                             <div class="backMessage"><p>好的</p></div>
                             <div class="clear"></div>
                         </div>

@@ -16,7 +16,6 @@
                        <li><em><i class="el-icon-picture-outline"></i></em><p>哈哈哈哈哈哈哈哈</p><el-button type="danger" size="mini" icon="el-icon-delete" circle></el-button></li>
                    </ul>
                 </div>
-
             </div>
         
             <div class="patternRightBox">

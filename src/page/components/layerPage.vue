@@ -10,11 +10,11 @@
                 <div class="materialBoxN">
                 <p class="timeLine"><span>2018-10-18</span><span>星期四</span></p>
                 <ul>
-                  <li><div class="imgBox"><img src="../images/userimg.jpg"></div><label><span><i class="el-icon-check"></i></span><input type="checkbox"></label></li>
-                  <li><div class="imgBox"><img src="../images/userimg.jpg"></div><label><span><i class="el-icon-check"></i></span><input type="checkbox"></label></li>
-                  <li><div class="imgBox"><img src="../images/userimg.jpg"></div><label><span><i class="el-icon-check"></i></span><input type="checkbox"></label></li>
-                  <li><div class="imgBox"><img src="../images/userimg.jpg"></div><label><span><i class="el-icon-check"></i></span><input type="checkbox"></label></li>
-                  <li><div class="imgBox"><img src="../images/userimg.jpg"></div><label><span><i class="el-icon-check"></i></span><input type="checkbox"></label></li>
+                  <li><div class="imgBox"><img src="../resource/images/userimg.jpg"></div><label><span><i class="el-icon-check"></i></span><input type="checkbox"></label></li>
+                  <li><div class="imgBox"><img src="../resource/images/userimg.jpg"></div><label><span><i class="el-icon-check"></i></span><input type="checkbox"></label></li>
+                  <li><div class="imgBox"><img src="../resource/images/userimg.jpg"></div><label><span><i class="el-icon-check"></i></span><input type="checkbox"></label></li>
+                  <li><div class="imgBox"><img src="../resource/images/userimg.jpg"></div><label><span><i class="el-icon-check"></i></span><input type="checkbox"></label></li>
+                  <li><div class="imgBox"><img src="../resource/images/userimg.jpg"></div><label><span><i class="el-icon-check"></i></span><input type="checkbox"></label></li>
                 </ul>
                 <div class="clear"></div>
                 </div>

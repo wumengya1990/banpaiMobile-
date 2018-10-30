@@ -1,0 +1,12 @@
+/**
+  * =============================================== PC端样式
+ */
+.hw_message {top: 60%;background:#000;color:red; filter:alpha(opacity:30); opacity:0.3;}
+.hw_loading {background:#fff; filter:alpha(opacity:30); opacity:0.1;}
+
+
+/**
+  * =============================================== 手机端样式
+ */
+.mobile_message {top: 60%;background:#000;color:red; filter:alpha(opacity:30); opacity:0.3;}
+.mobile_loading {background:#fff; filter:alpha(opacity:30); opacity:0.1;}

@@ -2,7 +2,7 @@
   <div class="login">
     <div class="loginMain">
       <div class="loginImg">
-        <img src="./images/userimg.jpg">
+        <img src="../resource/images/userimg.jpg">
       </div>
       <div class="useTopMessage">
         <h4>超级管理员</h4>

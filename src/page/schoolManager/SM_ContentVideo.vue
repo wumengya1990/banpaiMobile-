@@ -1,20 +1,19 @@
 <template>
   <div>
-    <Left></Left>
-
     <Nav></Nav>
+    <Top></Top>
   </div>
 
 </template>
 
 <script>
 
-  import Left from './SM_DevLeft.vue';
   import Nav from './SM_Nav.vue';
+  import Top from './SM_ContentTop.vue';
 
   export default {
-    name: 'SM_Dev',
-    components:{Left,Nav},
+    name: 'SM_ContentVideo',
+    components:{Nav,Top},
     data () {
       return {
 
@@ -24,7 +23,7 @@
 
     },
     mounted:function () {
-      this.bus.$emit('sm_nav',2);
+      this.bus.$emit('sm_nav',4,false);
     }
   }
 </script>

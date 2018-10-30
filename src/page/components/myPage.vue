@@ -1,7 +1,7 @@
 <template>
     <div class="myPage">
         <div class="loginImg">
-            <img src="../images/userimg.jpg">
+            <img src="../resource/images/userimg.jpg">
         </div>
         <div class="useTopMessage">
             <p>当前角色：班主任</p>

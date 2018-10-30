@@ -5,7 +5,8 @@ import Router from 'vue-router'
 // 布局
 import Layout from '../page/Layout.vue';
 // 选择角色
-import Chose from '../page/Chose.vue';
+//import Chose from '../page/Chose.vue';
+import Chose from '../page/common/Chose.vue';
 
 import links from '../page/components/links.vue'
 import login from '../page/components/login.vue'
@@ -23,9 +24,10 @@ import pattern1 from '../page/components/pattern1.vue'     //倒计时模式
 import pattern2 from '../page/components/pattern2.vue'     //通知模式
 import pattern3 from '../page/components/pattern3.vue'     //轮播模式
 import pattern4 from '../page/components/pattern4.vue'     //考场模式
-import pattern5 from '../page/components/pattern5.vue'     //考场模式
-import layerPage from '../page/components/layerPage.vue'
-import manage from '../page/components/manage.vue'     //考场模式
+import pattern5 from '../page/components/pattern5.vue'     //视频模式
+import layerPage from '../page/components/layerPage.vue'   //弹层页面
+import manage from '../page/components/manage.vue'     //开关机管理模式
+import monitor from '../page/components/monitor.vue'
 
 Vue.use(Router);
 export default new Router({
@@ -109,6 +111,10 @@ export default new Router({
       path:'/manage',
       name:'manage',
       component:manage
+    },{
+      path:'/monitor',
+      name:'monitor',
+      component:monitor
     }
   //   {
   //   path: '/',

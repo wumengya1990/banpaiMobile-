@@ -17,7 +17,7 @@
         <router-link to="/pattern5">视频模式</router-link>
         <router-link to="/layerPage">弹层</router-link>
         <router-link to="/manage">开关机管理</router-link>
-        
+        <router-link to="/monitor">设备管理</router-link>
     </div>
 </template>
 
