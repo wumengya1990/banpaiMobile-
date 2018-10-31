@@ -28,6 +28,7 @@ import pattern5 from '../page/components/pattern5.vue'     //视频模式
 import layerPage from '../page/components/layerPage.vue'   //弹层页面
 import manage from '../page/components/manage.vue'     //开关机管理模式
 import monitor from '../page/components/monitor.vue'
+import face from '../page/components/face.vue'    
 
 Vue.use(Router);
 export default new Router({
@@ -115,6 +116,10 @@ export default new Router({
       path:'/monitor',
       name:'monitor',
       component:monitor
+    },{
+      path:'/face',
+      name:'face',
+      component:face
     }
   //   {
   //   path: '/',

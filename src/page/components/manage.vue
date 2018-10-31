@@ -6,7 +6,7 @@
             <div class="patternRightBox mgT10">
                 <div class="patternRightBoxN">
                     <ul class="switchList">
-                        <li><em>是否使用</em><p><el-switch v-model="useDom" active-color="#13ce66" inactive-color="#ff4949"></el-switch></p></li>
+                        <li><em>是否使用</em><p class="ovHide"><el-switch v-model="useDom" active-color="#13ce66" inactive-color="#ff4949"></el-switch></p></li>
                     </ul>
                 </div>
             </div>
@@ -15,8 +15,8 @@
                  <h4>开关机时间</h4>
                  <div class="patternRightBoxN">
                      <ul class="timeList">
-                         <li><p><i class="el-icon-time"></i><em>{{beginTime}}</em><input v-model="beginTime" type="time"></p></li>
-                         <li><p><i class="el-icon-time"></i><em>{{endTime}}</em><input v-model="endTime" type="time"></p></li>
+                         <li><em>开始时间</em><p><i class="el-icon-time"></i><span>{{beginTime}}</span><input v-model="beginTime" type="time"></p></li>
+                         <li><em>结束时间</em><p><i class="el-icon-time"></i><span>{{endTime}}</span><input v-model="endTime" type="time"></p></li>
                      </ul>
                 </div>
             </div>
