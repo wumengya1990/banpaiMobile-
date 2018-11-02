@@ -1,10 +1,13 @@
 <template>
     <div class="links">
         <router-link to="/login">登录界面</router-link>
+        <router-link to="/notLogin">未登录提示</router-link>
+        <router-link to="/face">扫脸界面</router-link>
         <router-link to="/identitySwitching">用户切换</router-link>
         <router-link to="/myPage">我的页面</router-link>
         <router-link to="/nav">底部导航</router-link>
         <router-link to="/navAdmin">管理员底部导航</router-link>
+        <router-link to="/navMaster">班主任底部导航</router-link>
         <router-link to="/leaveMessage">留言页面</router-link>
         <router-link to="/topMenu">顶部菜单</router-link>
         <router-link to="/messageList">消息列表</router-link>
@@ -18,6 +21,7 @@
         <router-link to="/layerPage">弹层</router-link>
         <router-link to="/manage">开关机管理</router-link>
         <router-link to="/monitor">设备管理</router-link>
+        <router-link to="/attendance">考勤查看</router-link>
     </div>
 </template>
 

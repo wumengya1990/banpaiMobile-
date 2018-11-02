@@ -2,7 +2,7 @@
     <div class="login">
         <div class="loginMain">
             <div class="upfaceImgBox">
-                <img src="../resource/images/userimg.jpg">
+                <img src="../resource/images/dxface.jpg">
             </div>
 
             <div class="loginBtnsBox">
