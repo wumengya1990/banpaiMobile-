@@ -12,7 +12,7 @@
 
         <div class="monitorList">
             <ul>
-                <li v-for="shebei in shebeiList" :class="{shebeiOpen:shebei.SCstate}">
+                <li v-for="(shebei,index) in shebeiList" :class="{shebeiOpen:shebei.SCstate}" :key="index">
                     <div class="masks"></div>
                     <div class="bgColor1">
                     <div class="screenBox" :style="ysHeight">

@@ -214,3 +214,22 @@ body,html{height:100%}
 .attendanceListM dl dd span{ padding: 5px 0 0; display: block; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
 .attendanceListM dl dd span.state{color: #ff0000; font-size: 1.1rem;}
 .attendanceListM dl dd span.have{ color: #0096ff;}
+
+/* 班级管理 */
+.classManageTop{ height: 3rem; width: 100%; white-space: nowrap; overflow: hidden; overflow-x:auto; font-size: 0; background: #FFFFFF; display: -webkit-box;}
+.classManageTop span{height: 3rem; line-height: 3rem; font-size: 1.1rem; width: 6rem; display: block; box-flex: 1; -webkit-box-flex: 1; box-sizing: border-box; text-align: center;}
+.classManageTop span.on{ color: #0097fe; border-bottom:1px solid #0097fe;}
+.classManageTop span:nth-child(1).on{ color: #0097fe; border-bottom:2px solid #0097fe;}
+.classManageTop span:nth-child(2).on{ color: #ffa201; border-bottom:2px solid #ffa201;}
+
+.rightSuspension{ position: absolute; right: 0; bottom: 4.5rem; z-index: 10;}
+.rightSuspension a{ display: block; width: 3rem; height: 3rem; line-height: 3rem; margin: 5px; background: rgba(255,255,255,0.6); border-radius: 50%; overflow: hidden; text-align: center; box-shadow: 0 1px 2px #c5c5c5;}
+.rightSuspension a i{ color: #0097fe; font-size: 1.8rem;}
+.rightSuspension a.backTop{ display:none;}
+
+/* 新建通知 */
+.formList ul li em{ display: block; color: #999999; padding:10px;}
+.formRightOver{ overflow: hidden; background: #FFF; padding:10px;}
+.chickBox p{ padding: 5px 0;}
+.formList .bts{ text-align: center; padding:15px 0;}
+.formList .bts p{ padding: 10px 0;}

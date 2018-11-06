@@ -33,6 +33,9 @@ import face from '../page/components/face.vue'             //扫脸
 import navMaster from '../page/components/navMaster.vue'             //班主任底部导航
 import attendance from '../page/components/attendance.vue'
 import classManage from '../page/components/classManage.vue'
+import addClassNotice from '../page/components/addClassNotice.vue'   //新建通知
+import addMien from '../page/components/addMien.vue'   //新建风采
+
 
 Vue.use(Router);
 export default new Router({
@@ -140,6 +143,14 @@ export default new Router({
       path:'/classManage',
       name:'classManage',
       component:classManage
+    },{
+      path:'/addClassNotice',
+      name:'addClassNotice',
+      component:addClassNotice
+    },{
+      path:'/addMien',
+      name:'addMien',
+      component:addMien
     }
     
   //   {
