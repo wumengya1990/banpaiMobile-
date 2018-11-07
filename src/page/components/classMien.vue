@@ -1,12 +1,12 @@
 <template>
-    <div class="classManage bgColor fullScreen">
+    <div class="classMien bgColor fullScreen">
          <div class="rightSuspension">
              <a><i class="icon iconfont icon-xiugaishuxing"></i></a>
              <a class="backTop" @click="topBack()" href="javascript:void(0);"><i class="icon iconfont icon-huojian"></i></a>
          </div>
          <bnavs></bnavs>
          <div class="classManageTop">
-             <span class="on">班级通知</span><span @click="goToMien()">班级风采</span>
+             <span @click="goToClass()">班级通知</span><span class="on">班级风采</span>
          </div>
          <div class="messageListM" ref="scrollHeight">
             <ul>
@@ -23,7 +23,7 @@
 <script>
 import bnavs from "./navMaster.vue"
 export default {
-    name:"classManage",
+    name:"classMien",
     components:{bnavs},
     data(){
         return{
@@ -67,8 +67,8 @@ export default {
             let scrollBox = document.getElementsByClassName("messageListM")[0];
             scrollBox.scrollTop = 0;
         },
-        goToMien:function(){
-            this.$router.push({path:"classMien"});
+        goToClass:function(){
+            this.$router.push({path:"classManage"});
         }
         
     },watch:{

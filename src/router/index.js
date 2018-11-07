@@ -33,8 +33,12 @@ import face from '../page/components/face.vue'             //扫脸
 import navMaster from '../page/components/navMaster.vue'             //班主任底部导航
 import attendance from '../page/components/attendance.vue'
 import classManage from '../page/components/classManage.vue'
-import addClassNotice from '../page/components/addClassNotice.vue'   //新建通知
+import classMien from '../page/components/classMien.vue'
+import addClassNotice from '../page/components/addClassNotice.vue'   //新建班级通知
+import classNotice from '../page/components/classNotice.vue'   //班级通知
 import addMien from '../page/components/addMien.vue'   //新建风采
+import mien from '../page/components/mien.vue'   //新建风采
+import classMasterIndex from '../page/components/classMasterIndex.vue'   //班主任首页
 
 
 Vue.use(Router);
@@ -144,15 +148,30 @@ export default new Router({
       name:'classManage',
       component:classManage
     },{
+      path:'/classMien',
+      name:'classMien',
+      component:classMien
+    },{
       path:'/addClassNotice',
       name:'addClassNotice',
       component:addClassNotice
     },{
+      path:'/classNotice',
+      name:'classNotice',
+      component:classNotice
+    },{
       path:'/addMien',
       name:'addMien',
       component:addMien
+    },{
+      path:'/mien',
+      name:'mien',
+      component:mien
+    },{
+      path:'/classMasterIndex',
+      name:'classMasterIndex',
+      component:classMasterIndex
     }
-    
   //   {
   //   path: '/',
   //   name:'Layout',

@@ -23,8 +23,12 @@
         <router-link to="/monitor">设备管理</router-link>
         <router-link to="/attendance">考勤查看</router-link>
         <router-link to="/classManage">班级管理</router-link>
+        <router-link to="/classMien">班级风采</router-link>
         <router-link to="/addClassNotice">新增班级通知内容</router-link>
         <router-link to="/addMien">新增风采</router-link>
+        <router-link to="/classNotice">班级通知内容</router-link>
+        <router-link to="/mien">风采内容</router-link>
+        <router-link to="/classMasterIndex">班主任首页</router-link>
     </div>
 </template>
 
