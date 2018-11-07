@@ -235,3 +235,8 @@ body,html{height:100%}
 .chickBox p{ padding: 5px 0;}
 .formList .bts{ text-align: center; padding:15px 0;}
 .formList .bts p{ padding: 8px 0;}
+
+/* 班主任首页 */
+.indexDataBox{ background: #FFFFFF; margin: 10px; border-radius: 6px; box-shadow: 0 1px 3px #c5c5c5;}
+.indexDataBox h3{ height: 3rem; line-height: 3rem; border-bottom: 1px solid #eaeaea; padding: 0 10px;}
+.indexDataBox>div{ width: 100%; height:300px;}
