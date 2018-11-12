@@ -33,7 +33,7 @@
             </ul>
             <div class="bts">
                 <p><el-button type="primary" style="width:70%;" round>风采发布</el-button></p>
-                <p><el-button type="danger" style="width:70%;" round>取消发布</el-button></p>
+                <p><el-button type="danger" style="width:70%;" @click="pageBack()" round>取消发布</el-button></p>
             </div>
         </div>
     </div>
@@ -66,7 +66,10 @@ methods: {
       handlePictureCardPreview(file) {
         this.dialogImageUrl = file.url;
         this.dialogVisible = true;
-      }
+      },
+      pageBack:function(){
+            this.$router.go(-1);
+        }
     }
 }
 </script>

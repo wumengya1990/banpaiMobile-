@@ -27,7 +27,7 @@
             </ul>
             <div class="bts">
                 <p><el-button type="primary" style="width:70%;" round>通知发布</el-button></p>
-                <p><el-button type="danger" style="width:70%;" round>取消发布</el-button></p>
+                <p><el-button type="danger" style="width:70%;" @click="pageBack()" round>取消发布</el-button></p>
             </div>
         </div>
     </div>
@@ -43,6 +43,11 @@ data(){
         checkList:["六年级（1）班级"]
         
     }
+},
+computed:{
+    pageBack:function(){
+            this.$router.go(-1);
+        }
 }
 }
 </script>

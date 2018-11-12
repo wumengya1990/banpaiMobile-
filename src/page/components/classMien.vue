@@ -1,12 +1,12 @@
 <template>
     <div class="classMien bgColor fullScreen">
          <div class="rightSuspension">
-             <a><i class="icon iconfont icon-xiugaishuxing"></i></a>
+             <a @click="addNew()"><i class="icon iconfont icon-xiugaishuxing"></i></a>
              <a class="backTop" @click="topBack()" href="javascript:void(0);"><i class="icon iconfont icon-huojian"></i></a>
          </div>
          <bnavs></bnavs>
          <div class="classManageTop">
-             <span @click="goToClass()">班级通知</span><span class="on">班级风采</span>
+             <span @click="goToClass()"><i class="icon iconfont icon-xiaoxitongzhi"></i>班级通知</span><span class="on"><i class="icon iconfont icon-hongqi"></i>班级风采</span>
          </div>
          <div class="messageListM" ref="scrollHeight">
             <ul>
@@ -69,6 +69,9 @@ export default {
         },
         goToClass:function(){
             this.$router.push({path:"classManage"});
+        },
+        addNew:function(){
+            this.$router.push({path:"addMien"});
         }
         
     },watch:{

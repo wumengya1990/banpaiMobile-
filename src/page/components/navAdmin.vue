@@ -25,13 +25,13 @@
             <div class="bts"><font @click="navtcShow()">关闭</font></div>
             <dl><dt><img src="../resource/images/APP_03.jpg"></dt><dd>设备监控</dd></dl>
             <dl><dt><img src="../resource/images/APP_05.jpg"></dt><dd>模式切换</dd></dl>
-            <dl><dt><img src="../resource/images/APP_07.jpg"></dt><dd>设备监控</dd></dl>
-            <dl><dt><img src="../resource/images/APP_09.jpg"></dt><dd>设备监控</dd></dl>
-            <dl><dt><img src="../resource/images/APP_15.jpg"></dt><dd>设备监控</dd></dl>
-            <dl><dt><img src="../resource/images/APP_17.jpg"></dt><dd>设备监控</dd></dl>
-            <dl><dt><img src="../resource/images/APP_19.jpg"></dt><dd>设备监控</dd></dl>
-            <dl><dt><img src="../resource/images/APP_20.jpg"></dt><dd>设备监控</dd></dl>
-            <dl><dt><img src="../resource/images/APP_25.png"></dt><dd>设备监控</dd></dl>
+            <dl><dt><img src="../resource/images/APP_07.jpg"></dt><dd>开机管理</dd></dl>
+            <dl><dt><img src="../resource/images/APP_09.jpg"></dt><dd>素材管理</dd></dl>
+            <dl><dt><img src="../resource/images/APP_15.jpg"></dt><dd>校园通知</dd></dl>
+            <dl><dt><img src="../resource/images/APP_17.jpg"></dt><dd>校园动态</dd></dl>
+            <dl><dt><img src="../resource/images/APP_19.jpg"></dt><dd>校园视频</dd></dl>
+            <dl><dt><img src="../resource/images/APP_20.jpg"></dt><dd>校园图片</dd></dl>
+            <dl><dt><img src="../resource/images/APP_25.png"></dt><dd>身份切换</dd></dl>
         </div>
     </div>
 </template>

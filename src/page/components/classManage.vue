@@ -1,17 +1,18 @@
 <template>
     <div class="classManage bgColor fullScreen">
          <div class="rightSuspension">
-             <a><i class="icon iconfont icon-xiugaishuxing"></i></a>
+             <a @click="addNew()"><i class="icon iconfont icon-xiugaishuxing"></i></a>
              <a class="backTop" @click="topBack()" href="javascript:void(0);"><i class="icon iconfont icon-huojian"></i></a>
          </div>
          <bnavs></bnavs>
          <div class="classManageTop">
-             <span class="on">班级通知</span><span @click="goToMien()">班级风采</span>
+             <span class="on"><i class="icon iconfont icon-xiaoxitongzhi"></i>班级通知</span><span @click="goToMien()"><i class="icon iconfont icon-hongqi"></i>班级风采</span>
          </div>
          <div class="messageListM" ref="scrollHeight">
             <ul>
                 <li v-for="(notice, index) in classNoticeList" v-bind:key="index">
-                    <a v-bind:href="notice.CNLink" target="_block">{{notice.CNTitle}}</a>
+                    <!-- <a v-bind:href="notice.CNLink" target="_block">{{notice.CNTitle}}</a> -->
+                    <router-link to="classNotice">{{notice.CNTitle}}</router-link>
                     <p>{{notice.CNContent}}</p>
                     <time>{{notice.CNTime}}</time>
                 </li>
@@ -69,6 +70,9 @@ export default {
         },
         goToMien:function(){
             this.$router.push({path:"classMien"});
+        },
+        addNew:function(){
+            this.$router.push({path:"addClassNotice"});
         }
         
     },watch:{
