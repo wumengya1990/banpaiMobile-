@@ -49,6 +49,10 @@ body,html{height:100%}
 /* 显示显示隐藏 */
 .ovHide{ overflow: hidden;}
 
+/* 滚动 */
+.scrollLR{ overflow-x: auto;}
+.scrollTB{ overflow-y: auto;}
+
 /* 外边距 */
 .mgL5{ margin-left: 5px;}
 .mgR5{ margin-right: 5px;}
@@ -63,6 +67,8 @@ body,html{height:100%}
 /* 底部导航 */
 .nav{ position: fixed; left: 0; bottom: 0; right: 0; top: auto; margin: auto; display:-webkit-box; border-top: 1px solid #eaeaea; z-index: 100; background: #ffffff;}
 .nav a{ display: block; box-flex: 1; -webkit-box-flex: 1; text-align: center; height: 3rem; line-height: 3rem; font-size: 1.1rem; color: #666666; border-right:1px solid #eaeaea;}
+.nav a i{ font-size: 1.8rem; vertical-align: middle;}
+.nav a.on{ color: #0096ff;}
 
 /* 管理员底部导航 */
 .navAdmin{ position: fixed; left: 0; bottom: 0; right: 0; top: auto; margin: auto; display: -webkit-box; border-top: 1px solid #eaeaea; z-index: 100; background: #ffffff; height: 4rem;}
@@ -85,7 +91,7 @@ body,html{height:100%}
 .navAdmin .navtc .bts .userTop{ float: left;}
 .navAdmin .navtc .bts .userTop .headImg{ float: left; width:2.8rem; height: 2.8rem; text-align: center; line-height:2.8rem; background:#424242; border-radius: 50px; overflow: hidden;}
 .navAdmin .navtc .bts .userTop .headImg i{ font-size: 28px; color: #FFFFFF;}
-.navAdmin .navtc .bts .userTop span{display: inline-block; vertical-align: middle; padding: 0 0 0 10px; font-size: 1.2rem;}
+.navAdmin .navtc .bts .userTop span{display: inline-block; vertical-align: middle; padding: 0 0 0 10px; font-size: 1.2rem; }
 /* 我的页面 */
 .myPage{ height: 80%; width: 100%; overflow: hidden; position: fixed; left: 0; top: 0; right: 0; bottom: 0; margin: auto;}
 
@@ -241,6 +247,27 @@ body,html{height:100%}
 .formList .bts p{ padding: 8px 0;}
 
 /* 班主任首页 */
+.classMasterIndexScroll{ bottom: 4rem;}
 .indexDataBox{ background: #FFFFFF; margin: 10px; border-radius: 6px; box-shadow: 0 1px 3px #c5c5c5;}
 .indexDataBox h3{ height: 3rem; line-height: 3rem; border-bottom: 1px solid #eaeaea; padding: 0 10px;}
 .indexDataBox>div{ width: 100%; height:300px;}
+
+/* 幻灯片样式 */
+.tubiao{ margin: 10px; border-radius: 6px; overflow: hidden;}
+.tongji h4{ height: 3rem; line-height: 3rem; border-bottom: 1px solid #eaeaea; padding: 0 10px; font-weight: normal;}
+.tongji h4 span{ font-size:16px; display: inline-block; text-align: center; overflow: hidden;}
+.tongji h4 span:first-child{ float: left; width:80%; text-align:justify;}
+.tongji ul li i{ font-size:36px; vertical-align: middle; color: #ffa201}
+.tongji ul li{ height: 3rem; line-height: 3rem;}
+.tongji ul li span{ font-size:16px; display: inline-block; text-align: center; overflow: hidden;}
+.tongji ul li span:first-child{ float: left; width:80%; text-align:justify;}
+.tongji ul li span b{ font-size: 16px; color: #ffa201;}
+.tongji ul li:first-child b{ color: #0096ff;}
+.tongji ul li:first-child i{ color: #0096ff;}
+
+/* 上传盒子 */
+.uploadBox ul { font-size: 0;}
+.uploadBox ul li{ width:80px; height:80px; border:1px solid #eaeaea; border-radius: 6px; overflow: hidden; margin: 0 6px 6px 0; display: inline-block; float:left;}
+.uploadBox ul li img{ width: 100%; height: 100%;}
+.uploadBox .addBox{ width:80px; height: 80px; border-radius: 6px; display:inline-block;}
+.uploadBox .addBox input{}

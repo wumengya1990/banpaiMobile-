@@ -21,7 +21,17 @@
 
 <script>
 export default {
-name:"login"
+name:"login",
+data(){
+    return{
+
+    }
+},
+methods:{
+    huadong:function(){
+        
+    }
+}
 
 }
 </script>

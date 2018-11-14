@@ -66,7 +66,6 @@
       },
       classList:function(classList){
         this.dataFromTC = classList;
-        console.log(this.dataFromTC);
       }
     },
     mounted:function () {

@@ -1,8 +1,7 @@
 <template>
   <div class="manage bgColor fullScreen">
-    <Left></Left>
     <Nav></Nav>
-    <div class="patternRightBoxM">
+    <div class="patternRightBoxM" style="left: 3rem">
       <div class="patternRightBox">
         <div class="patternRightBoxN">
           <el-switch v-model="loop" active-color="#13ce66" inactive-color="#ff4949"></el-switch>

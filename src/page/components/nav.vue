@@ -1,7 +1,7 @@
 <template>
     <div class="nav">
-        <a href="">留言</a>
-        <a href="">我的</a>
+        <router-link active-class="on" to="/leaveMessage"><i class="icon iconfont icon-xinxi"></i>留言</router-link>
+        <router-link active-class="on" to="/myPage"><i class="icon iconfont icon-wode"></i>我的</router-link>
     </div>
 </template>
 

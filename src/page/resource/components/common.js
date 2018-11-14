@@ -10,6 +10,8 @@ Vue.prototype.common_data = function (vm,data) {
   if(data.code == 'NO_LOGIN'){
     console.log(common);
     vm.$router.push({name:'Login'});
+  }else{
+    vm.mobile_error(data.msg);
   }
 
 };

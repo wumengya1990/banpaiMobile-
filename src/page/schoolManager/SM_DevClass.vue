@@ -9,7 +9,7 @@
           <el-tree
             :data="all.list" show-checkbox ref="tree" highlight-current :props="props"
             node-key="id"
-            @check-change="class_change">
+            @check="class_change" >
           </el-tree>
         </div>
       </div>
@@ -62,28 +62,20 @@
       class_remove:function(c){
         alert(c.className);
       },
-      class_change:function(data,checked){
-        let id = data.id;
-        for (let i in this.all.list) {
-          let g = this.all.list[i];
-          g.checked = checked;
-          for (let j in g.children){
-            let c = g.children[j];
-            if(g.id == id || c.id == id){
-              c.checked = checked;
-            }
-          }
-        }
-        this.select_change();
-      },
-      select_change:function () {
+      class_change:function(){
+        let selects = this.$refs.tree.getCheckedKeys();
         this.select.list = new Array();
         for (let i in this.all.list) {
           let g = this.all.list[i];
           for (let j in g.children){
             let c = g.children[j];
-            if(c.checked){
-              this.select.list.push(c);
+            if(selects.length > 0){
+              for (let k in selects){
+                if(selects[k] == c.id){
+                  let s = {id:c.id,text:g.text+c.text};
+                  this.select.list.push(s);
+                }
+              }
             }
           }
         }

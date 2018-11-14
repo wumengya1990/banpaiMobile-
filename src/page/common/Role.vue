@@ -5,10 +5,9 @@
         <img src="../resource/images/userimg.jpg">
       </div>
       <div class="useTopMessage">
-        <h4>班牌系统</h4>
+        <h4>无权限</h4>
       </div>
       <div class="loginBtnsBox">
-        <input type="button" @click="login" value="登录">
       </div>
     </div>
   </div>
@@ -26,8 +25,23 @@
 
     },
     methods:{
-      login:function () {
-        this.$router.push({name:'Chose'});
+      login_school:function () {
+        let url = 'wechat/login/login';
+        this.$ajax.get(url).then((out)=>{
+          let data = out.data;
+          if(data.code == 'S0000'){
+            this.$router.push({name:'SM_Monit'});
+          }else{
+            this.common_data(this,data);
+          }
+        }).catch((error)=>{
+
+        });
+      },
+      login_guardian:function () {
+        this.$router.push({name:'GU_Message'});
+      },
+      login_class:function () {
       }
     },
     mounted:function () {

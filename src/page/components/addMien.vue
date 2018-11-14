@@ -17,6 +17,19 @@
                 <li>
                     <em>风采图片（请上传横版图片）</em>
                     <div class="formRightOver">
+                        <div class="uploadBox">
+                            <ul>
+                                <li><img src=""></li>
+                                <li><img src=""></li>
+                                <li><img src=""></li>
+                                <li><img src=""></li>
+                                <li><img src=""></li>
+                            </ul>
+                            <div class="addBox"> 
+                                <input type="file">
+                            </div>
+                            <div class="clear"></div>
+                        </div>
                         <el-upload
                         action="https://jsonplaceholder.typicode.com/posts/"
                         list-type="picture-card"

@@ -1,45 +1,46 @@
 <template>
     <div class="navAdmin">
-        <router-link active-class="on" to="">
+        <router-link active-class="on" to="/classMasterIndex">
             <i class="icon iconfont icon-shouye2"></i>
             <span>首页</span>
         </router-link>
-        <router-link active-class="on" to="">
+        <router-link active-class="on" to="/classManage">
             <i class="icon iconfont icon-banjiicon"></i>
             <span>班级管理</span>
         </router-link>
         <em>
             <el-button type="primary" icon="el-icon-plus" size="mini" @click="navtcShow()" circle></el-button>
         </em>
-        <router-link active-class="on" to="">
-            <i class="icon iconfont icon-huojiangjiangbei"></i>
-            <span>荣誉管理</span>
-        </router-link>
+        
         <router-link active-class="on" to="/attendance">
             <i class="icon iconfont icon-qiandao"></i>
             <span>考勤查看</span>
         </router-link>
+        <router-link active-class="on" to="">
+            <i class="icon iconfont icon-shenfen"></i>
+            <span>身份切换</span>
+        </router-link>
 
         <div class="navtc" v-show="tcShow">
             <div class="bts">
-                <div class="userTop">
-                    <div class="headImg">
-                        <i class="icon iconfont icon-yonghu1"></i>
-                    </div>
-                    <span>张洋</span>
-                    <el-select v-model="value" placeholder="请选择" size="mini">
-                        <el-option
-                        v-for="item in options"
-                        :key="item.value"
-                        :label="item.label"
-                        :value="item.value">
-                        </el-option>
-                    </el-select>
-                    
-                </div>
-                <font @click="navtcShow()">关闭</font>
-                <div class="clear"></div>
+          <div class="userTop">
+            <div class="headImg">
+              <i class="icon iconfont icon-yonghu1"></i>
             </div>
+            <span>张洋</span>
+            <el-select v-model="value" placeholder="请选择" size="mini">
+              <el-option
+                v-for="item in options"
+                :key="item.value"
+                :label="item.label"
+                :value="item.value">
+              </el-option>
+            </el-select>
+
+          </div>
+          <font @click="navtcShow()">关闭</font>
+          <div class="clear"></div>
+        </div>
             <dl><dt><img src="../resource/images/masterAPP_03.png"></dt><dd>班级通知</dd></dl>
             <dl><dt><img src="../resource/images/masterAPP_05.png"></dt><dd>班级风采</dd></dl>
             <dl><dt><img src="../resource/images/masterAPP_07.png"></dt><dd>班级荣誉</dd></dl>

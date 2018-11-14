@@ -1,8 +1,23 @@
 <template>
     <div class="classMasterIndex bgColor fullScreen">
+        <bnavs></bnavs>
+
+        <div class="classMasterIndexScroll fullScreen ovHide scrollTB">
         <div class="tubiao">
-            
+            <el-carousel :interval="6000" trigger="click" height="200px">
+            <el-carousel-item v-for="item in 1" :key="item">
+                <div class="tongji">
+                    <h4><span>本班班牌使用情况统计</span><span>本月</span></h4>
+                    <ul>
+                        <li><span><i class="icon iconfont icon-xinxifabu"></i>信息发布</span><span><b>8</b></span></li>
+                        <li><span><i class="icon iconfont icon-xinxi"></i>家长留言</span><span><b>6</b></span></li>
+                    </ul>
+                </div>
+            </el-carousel-item>
+            </el-carousel>
+
         </div>
+
         <div class="indexDataBox">
             <h3><span>今日考勤统计</span></h3>
             <div id="tongji1"></div>
@@ -11,21 +26,29 @@
             <h3><span>信息发布周统计</span></h3>
             <div id="tongji2"></div>
         </div>
+        </div>
     </div>
 </template>
 
 <script>
-
+// import VueTouch from 'vue-touch'
+import bnavs from "./navMaster.vue"
 export default {
 name:"classMasterIndex",
+components:{bnavs},
 data(){
     return{
-       
+       bannerMessageList:[
+           {sebtMessage:8,leaveMessage:5},
+           {sebtMessage:18,leaveMessage:14},
+           {sebtMessage:8,leaveMessage:5}
+       ]
     }
 },
 mounted(){
     this.jinriData();
     this.zhouXinxi();
+    this.TouchSlide();
 },
 methods:{
     jinriData:function(){
@@ -119,6 +142,22 @@ methods:{
 }
 </script>
 
-<style>
 
+
+<style>
+.el-carousel__item h3 {
+    color: #333333;
+    font-size: 14px;
+    opacity: 0.75;
+    line-height: 150px;
+    margin: 0;
+  }
+
+  .el-carousel__item:nth-child(2n) {
+     background-color: #ffffff;
+  }
+  
+  .el-carousel__item:nth-child(2n+1) {
+     background-color: #ffffff;
+  }
 </style>

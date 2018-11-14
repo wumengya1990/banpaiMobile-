@@ -1,7 +1,7 @@
 <template>
   <div class="nav">
-    <a href="javascript:void(0)" :class="{on:selected == 1}" @click="go_gu(1)">留言</a>
-    <a href="javascript:void(0)" :class="{on:selected == 2}" @click="go_gu(2)">我的</a>
+    <a href="javascript:void(0)" :class="{on:selected == 1}" @click="go_gu(1)">家长留言</a>
+    <a href="javascript:void(0)" :class="{on:selected == 2}" @click="go_gu(2)">身份切换</a>
   </div>
 </template>
 
@@ -29,6 +29,7 @@ export default {
     }
   },
   mounted:function () {
+
     // 注册事件
     this.bus.$on('gu_nav', (type)=>{
       this.go_gu(type);
