@@ -19,28 +19,20 @@
                     <div class="formRightOver">
                         <div class="uploadBox">
                             <ul>
-                                <li><img src=""></li>
-                                <li><img src=""></li>
-                                <li><img src=""></li>
-                                <li><img src=""></li>
-                                <li><img src=""></li>
+                                <li v-for="(imgs,index) in fileListSC" @click=" imgs.cazuo = !imgs.cazuo">
+                                    <img :src="imgs.url">
+                                    <div class="upState"><i class="el-icon-check"></i></div>
+                                    <div class="operateBox" v-show="imgs.cazuo">
+                                        <a @click="drop(index)" href="javascript:void(0)"><i class=" el-icon-delete"></i></a>
+                                    </div>
+                                </li>
                             </ul>
                             <div class="addBox"> 
                                 <input type="file">
                             </div>
                             <div class="clear"></div>
                         </div>
-                        <el-upload
-                        action="https://jsonplaceholder.typicode.com/posts/"
-                        list-type="picture-card"
-                        :on-preview="handlePictureCardPreview"
-                        :file-list="fileListSC"
-                        :on-remove="handleRemove">
-                        <i class="el-icon-plus"></i>
-                        </el-upload>
-                        <el-dialog :visible.sync="dialogVisible">
-                        <img width="100%" :src="dialogImageUrl" alt="">
-                        </el-dialog>
+                        
                     </div>
                 </li>
             </ul>
@@ -61,11 +53,11 @@ data(){
         textarea3: '',
         checkList:["六年级（1）班级"],
         fileListSC:[
-            {name: 'food.jpeg',url:'https://fuss10.elemecdn.com/3/63/4e7f3a15429bfda99bce42a18cdd1jpeg.jpeg?imageMogr2/thumbnail/360x360/format/webp/quality/100'},
-            {name: 'food.jpeg',url:'https://fuss10.elemecdn.com/3/63/4e7f3a15429bfda99bce42a18cdd1jpeg.jpeg?imageMogr2/thumbnail/360x360/format/webp/quality/100'},
-            {name: 'food.jpeg',url:'https://fuss10.elemecdn.com/3/63/4e7f3a15429bfda99bce42a18cdd1jpeg.jpeg?imageMogr2/thumbnail/360x360/format/webp/quality/100'},
-            {name: 'food.jpeg',url:'https://fuss10.elemecdn.com/3/63/4e7f3a15429bfda99bce42a18cdd1jpeg.jpeg?imageMogr2/thumbnail/360x360/format/webp/quality/100'},
-            {name: 'food.jpeg',url:'https://fuss10.elemecdn.com/3/63/4e7f3a15429bfda99bce42a18cdd1jpeg.jpeg?imageMogr2/thumbnail/360x360/format/webp/quality/100'}
+            {name: 'food.jpeg',url:'https://fuss10.elemecdn.com/3/63/4e7f3a15429bfda99bce42a18cdd1jpeg.jpeg?imageMogr2/thumbnail/360x360/format/webp/quality/100',cazuo:false},
+            {name: 'food.jpeg',url:'https://fuss10.elemecdn.com/3/63/4e7f3a15429bfda99bce42a18cdd1jpeg.jpeg?imageMogr2/thumbnail/360x360/format/webp/quality/100',cazuo:false},
+            {name: 'food.jpeg',url:'https://fuss10.elemecdn.com/3/63/4e7f3a15429bfda99bce42a18cdd1jpeg.jpeg?imageMogr2/thumbnail/360x360/format/webp/quality/100',cazuo:false},
+            {name: 'food.jpeg',url:'https://fuss10.elemecdn.com/3/63/4e7f3a15429bfda99bce42a18cdd1jpeg.jpeg?imageMogr2/thumbnail/360x360/format/webp/quality/100',cazuo:false},
+            {name: 'food.jpeg',url:'https://fuss10.elemecdn.com/3/63/4e7f3a15429bfda99bce42a18cdd1jpeg.jpeg?imageMogr2/thumbnail/360x360/format/webp/quality/100',cazuo:false}
         ],
         dialogImageUrl: '',
         dialogVisible: false
@@ -82,7 +74,11 @@ methods: {
       },
       pageBack:function(){
             this.$router.go(-1);
-        }
+      },
+      drop:function(c){
+          this.fileListSC.splice(c,1);
+      }
+        
     }
 }
 </script>

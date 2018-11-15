@@ -267,7 +267,15 @@ body,html{height:100%}
 
 /* 上传盒子 */
 .uploadBox ul { font-size: 0;}
-.uploadBox ul li{ width:80px; height:80px; border:1px solid #eaeaea; border-radius: 6px; overflow: hidden; margin: 0 6px 6px 0; display: inline-block; float:left;}
+.uploadBox ul li{ width:80px; height:80px; border:1px solid #eaeaea; border-radius: 6px; overflow: hidden; margin: 0 6px 6px 0;  float: left; position: relative;}
 .uploadBox ul li img{ width: 100%; height: 100%;}
-.uploadBox .addBox{ width:80px; height: 80px; border-radius: 6px; display:inline-block;}
-.uploadBox .addBox input{}
+.uploadBox ul li .upState{ position: absolute; right: 0; top: 0; width: 0; height: 0; line-height: 0; border: solid;
+border-width:12px; border-color:#0096ff #0096ff transparent transparent;}
+.uploadBox ul li .upState i{ position: absolute; right:-11px; top:-12px;  color: #FFFFFF;}
+.uploadBox ul li .operateBox{ position: absolute; width: 80px; height: 80px; line-height: 80px; text-align: center; left: 0; top:0; right: 0; bottom: 0; margin: auto; background: rgba(0,0,0,0.6);}
+.uploadBox ul li .operateBox a{ color: #FFFFFF; display: block; width:35%; height: 35%; line-height:2.3rem; position: absolute; left: 0; top: 0; right: 0; bottom: 0; margin: auto; background: rgba(218, 143, 143, 0.2); box-shadow: 0 1px 3px #212121; border-radius: 5px;}
+.uploadBox ul li .operateBox a i{ font-size: 1.2rem;}
+.uploadBox .addBox{ width:80px; height: 80px; border:1px dashed #8c939d; position: relative; border-radius: 6px; display:inline-block;}
+.uploadBox .addBox input{ position: absolute; width: 100%; height: 100%; left: 0; top: 0; opacity: 0;}
+.uploadBox .addBox::after{ content:""; position: absolute; display: block; width: 25px; height: 2px; background: #8c939d; left: 0; top: 0; right:0; bottom: 0; margin: auto;}
+.uploadBox .addBox::before{ content:""; position: absolute; display: block; width: 2px; height: 25px; background: #8c939d; left: 0; top: 0; right:0; bottom: 0; margin: auto;}
