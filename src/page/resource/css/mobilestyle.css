@@ -91,7 +91,7 @@ body,html{height:100%}
 .navAdmin .navtc .bts .userTop{ float: left;}
 .navAdmin .navtc .bts .userTop .headImg{ float: left; width:2.8rem; height: 2.8rem; text-align: center; line-height:2.8rem; background:#424242; border-radius: 50px; overflow: hidden;}
 .navAdmin .navtc .bts .userTop .headImg i{ font-size: 28px; color: #FFFFFF;}
-.navAdmin .navtc .bts .userTop span{display: inline-block; vertical-align: middle; padding: 0 0 0 10px; font-size: 1.2rem; }
+.navAdmin .navtc .bts .userTop span{vertical-align: middle; padding: 0 0 0 10px; font-size: 1.2rem; float: left; max-width: 7rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; text-align: justify;}
 /* 我的页面 */
 .myPage{ height: 80%; width: 100%; overflow: hidden; position: fixed; left: 0; top: 0; right: 0; bottom: 0; margin: auto;}
 
@@ -239,7 +239,7 @@ body,html{height:100%}
 
 /* 新建通知 */
 .formList ul li em{ display: block; color: #999999; padding:10px;}
-.formList{ position: absolute; left: 0; top: 0; right: 0; bottom: 0; margin: auto; overflow: hidden; overflow-y: auto;}
+.formList{ position: absolute; left: 0; top: 0; right: 0; bottom:4rem; margin: auto; overflow: hidden; overflow-y: auto;}
 .formRightOver{ overflow: hidden; background: #FFF; padding:10px;}
 .formRightOver .messageCon{ line-height: 1.8em;}
 .chickBox p{ padding: 5px 0;}

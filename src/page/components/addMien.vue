@@ -1,5 +1,6 @@
 <template>
     <div class="addMien bgColor fullScreen">
+        <bnavs></bnavs>
         <div class="formList">
             <ul>
                 <li>
@@ -45,8 +46,10 @@
 </template>
 
 <script>
+import bnavs from "./navMaster.vue"
 export default {
 name:"addMien",
+components:{bnavs},
 data(){
     return{
         input:'',
